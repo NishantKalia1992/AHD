@@ -1,0 +1,43 @@
+{
+	"user": {
+		"id": 1
+	},
+	"name": "Amitesh",
+	"description": "Property Description",
+	"price": "45lakh",
+	"propertyType": "1",
+	"purpose": "1",
+	"status": "1",
+	"area": "Sector - 15",
+	"country": {
+		"id": 1
+	},
+	"state": {
+		"id": 1
+	},
+	"city": {
+		"id": 3
+	},
+	"address": "noida ",
+	"zipcode": "23345e",
+	"featuredProperty": "mixed-use",
+	"bedrooms": "2",
+	"bathrooms": "2",
+	"rooms": "4",
+	"swimmingPool": false,
+	"gasConnection": false,
+	"ro": false,
+	"clubHouse": false,
+	"basketballCourt": false,
+	"tennisCourt": false,
+	"gym": false,
+	"indoorGames": false,
+	"childPlayArea": false,
+	"hospitalNearBy": true,
+	"mallNearBy": false,
+	"marketNearBy": false,
+	"schoolNearBy": true,
+	"attachments": [],
+	"videoURL": "",
+	"tags": "react"
+}
