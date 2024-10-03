@@ -12,7 +12,7 @@
 	<groupId>com.all</groupId>
 	<artifactId>homedesire</artifactId>
 	<version>0.0.1</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>Home Desire</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
