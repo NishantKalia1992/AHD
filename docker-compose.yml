@@ -1,37 +1,27 @@
-version: '3.8'
-
 services:
-  # Spring Boot Application
   springboot-app:
     build: .
     ports:
-      - "8081:8081"  # Expose the Spring Boot app on port 8080
+      - "8081:8081"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/homedesire_dev?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/homedesire_dev
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
     depends_on:
-      - mysql  # Ensure MySQL starts before Spring Boot
+      - mysql
     networks:
       - spring-network
 
-  # MySQL Database
   mysql:
-    image: mysql:8.0  # Use MySQL image from Docker Hub
+    image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: root
+      MYSQL_DATABASE: homedesire_dev
     ports:
-      - "3362:3306"  # Expose MySQL on port 3306
-    volumes:
-      - mysql_data:/var/lib/mysql  # Persist MySQL data
+      - "3362:3306"
     networks:
       - spring-network
 
-# Define a custom Docker network for inter-service communication
 networks:
   spring-network:
     driver: bridge
-
-volumes:
-  mysql_data:
