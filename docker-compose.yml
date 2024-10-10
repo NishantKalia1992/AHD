@@ -22,7 +22,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: homedesire_dev
     ports:
-      - "3362:3306"  # Expose MySQL on port 3306
+      - "3306:3306"  # Expose MySQL on port 3306
     volumes:
       - mysql_data:/var/lib/mysql  # Persist MySQL data
     networks:
