@@ -48,6 +48,7 @@ public class HomeDesireApplication implements ApplicationRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HomeDesireApplication.class, args);
+		System.out.println("Code containerize with docker and ci-cd pipeline using jenkins");
 	}
 
 	@Override
